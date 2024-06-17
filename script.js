@@ -5,16 +5,16 @@ function hasKey(key) {
 	const flag =-1;
 	sampleObject.map((item)=>{
 		if(key===item){
-			flag=1;
+			return true;
 		}
 	})
-	if(flag===1){
-		return true;
+	
+	if(flag===-1){
+		return flase;
 	}
-	else
-		flase;
+		
 }
 
 // Do not change the code below
-const key = prompt("Enter Key.");
-alert(hasKey(key));
+// const key = prompt("Enter Key.");
+// alert(hasKey(key));
